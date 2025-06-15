@@ -9,6 +9,7 @@ public class Message {
 
 	private String sender;
 	private String content;
+	
 	private LocalDateTime timeStamp;
 
 	public Message() {
