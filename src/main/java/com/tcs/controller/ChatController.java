@@ -16,7 +16,7 @@ import com.tcs.repository.RoomRepository;
 
 @RestController
 //@CrossOrigin(origins = "http://localhost:5173")
-@CrossOrigin
+//@CrossOrigin
 public class ChatController {
 
 	private final RoomRepository roomRepo;

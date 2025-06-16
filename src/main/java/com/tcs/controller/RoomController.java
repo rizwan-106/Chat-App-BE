@@ -15,7 +15,7 @@ import com.tcs.service.RoomService;
 @RestController
 @RequestMapping("/api/v1/rooms")
 //@CrossOrigin(origins ="http://localhost:5173")
-@CrossOrigin
+//@CrossOrigin
 public class RoomController {
 
 	private final RoomService roomService;
