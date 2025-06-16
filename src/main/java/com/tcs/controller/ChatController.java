@@ -1,7 +1,6 @@
 package com.tcs.controller;
 
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 
 import org.springframework.messaging.handler.annotation.DestinationVariable;
 import org.springframework.messaging.handler.annotation.MessageMapping;
@@ -34,8 +33,7 @@ public class ChatController {
 		Message msg = new Message();
 		msg.setSender(request.getSender());
 		msg.setContent(request.getContent());
-//		msg.setTimeStamp(LocalDateTime.now());
-		msg.setTimeStamp(LocalTime.now());
+		msg.setTimeStamp(LocalDateTime.now());
 
 
 		if (room != null) {

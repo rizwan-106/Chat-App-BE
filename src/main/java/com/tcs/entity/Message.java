@@ -1,6 +1,6 @@
 package com.tcs.entity;
 
-import java.time.LocalTime;
+import java.time.LocalDateTime;
 
 import lombok.Data;
 
@@ -9,8 +9,8 @@ public class Message {
 
 	private String sender;
 	private String content;
-	
-	private LocalTime timeStamp;
+
+	private LocalDateTime timeStamp;
 
 	public Message() {
 	}
@@ -18,6 +18,6 @@ public class Message {
 	public Message(String sender, String content) {
 		this.sender = sender;
 		this.content = content;
-		this.timeStamp = LocalTime.now();
+		this.timeStamp = LocalDateTime.now();
 	}
 }
