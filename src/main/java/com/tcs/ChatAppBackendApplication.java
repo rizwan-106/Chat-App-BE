@@ -11,8 +11,8 @@ import io.github.cdimascio.dotenv.Dotenv;
 public class ChatAppBackendApplication {
 
 	public static void main(String[] args) {
-		Dotenv dotenv = Dotenv.load();
-        System.setProperty("MONGO_URI", dotenv.get("MONGO_URI"));
+//		Dotenv dotenv = Dotenv.load();
+//        System.setProperty("MONGO_URI", dotenv.get("MONGO_URI"));
         TimeZone.setDefault(TimeZone.getTimeZone("Asia/Kolkata"));
 		SpringApplication.run(ChatAppBackendApplication.class, args);
 	}
